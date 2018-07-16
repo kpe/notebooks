@@ -12,7 +12,7 @@ in the [MS CNTK](https://github.com/Microsoft/CNTK). The notebook at:
 
 would download and store the DS as a pickle that could be used like this:
 
-```
+```python
 def load_ds(fname='ms_cntk_atis.train.pkl.gz'):
     with gzip.open(os.path.join(DATA_DIR, fname), 'rb') as stream:
         ds,dicts = pickle.load(stream)
@@ -26,7 +26,7 @@ def load_ds(fname='ms_cntk_atis.train.pkl.gz'):
 
 , i.e. to show the first few samples:
 
-```
+```python
 t2i, s2i, in2i = map(dicts.get, ['token_ids', 'slot_ids','intent_ids'])
 i2t, i2s, i2in = map(lambda d: {d[k]:k for k in d.keys()}, [t2i,s2i,in2i])
 query, slots, intent =  map(train_ds.get, ['query', 'slot_labels', 'intent_labels'])
