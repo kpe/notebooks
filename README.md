@@ -3,14 +3,14 @@
 
 ### ATIS DS Downloader 
 
-#### new version (fetched from [yvchen/JointSLU])(github.com/yvchen/JointSLU)
+#### new version (fetched from [yvchen/JointSLU])(https://github.com/yvchen/JointSLU)
 After working for a while with the ATIS dataset, I noticed some issues with 
-the data split (see [atis_resplit.ipynb](atis_resplit.ipynb)) and decided to resplit it. I have also found a text version of the ATIS dataset at [yvchen/JointSLU])(github.com/yvchen/JointSLU).
+the data split (see [atis_resplit.ipynb](atis_resplit.ipynb)) and decided to resplit it. I have also found a text version of the ATIS dataset at [yvchen/JointSLU])(https://github.com/yvchen/JointSLU).
 
 Here is the jupyter notebook used to fetch and resplit the ATIS dataset
 into train, dev and test datasets.
 
-Both the ATIS versions - the one from the MS CNTK and the one from [yvchen/JointSLU](github.com/yvchen/JointSLU) are identical (the only difference i found is in the prefered tokenization of words like - I'm and I'd).
+Both the ATIS versions - the one from the MS CNTK and the one from [yvchen/JointSLU](https://github.com/yvchen/JointSLU) are identical (the only difference i found is in the prefered tokenization of words like - I'm and I'd).
 
 The new split however omits some of the data samples (40 in total) containing uncommon slot or intent labels, and also uses different numerical ids for the labels (sorted by usage frequency). The `token_id` 0 is not used, so it could be assigned to a padding symbol if required.
 
