@@ -3,7 +3,7 @@
 
 ### ATIS DS Downloader 
 
-#### new version (fetched from [yvchen/JointSLU](/yvchen/JointSLU)
+#### new version (fetched from [yvchen/JointSLU](https://github.com/yvchen/JointSLU))
 After working for a while with the ATIS dataset, I noticed some issues with 
 the data split (see [atis_resplit.ipynb](atis_resplit.ipynb)) and decided to resplit it. I have also found a text version of the ATIS dataset at [yvchen/JointSLU](https://github.com/yvchen/JointSLU).
 
